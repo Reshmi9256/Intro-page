@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+
+  <title>INTRO PAGE</title>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .righside,.leftside{
+      display: flex;
+    }
+    .leftside{
+      align-items: center;
+gap: 15px;
+    }
+    h1{
+      margin-right: 30px;
+    }
+    .leftside p{
+      cursor: pointer;
+    }
+    button{
+      background: white;
+      border-radius: 5px;
+      padding: 10px 5px;
+      width: 80px;
+      margin-right: 15px;
+      color: black;
+      cursor: pointer;
+      font-weight: bold;
+    }
+   .content{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+   }
+   .lefthero{
+    margin-left: 150px;
+    width:45%;
+   }
+   .righthero{
+    margin-right: 125px;
+    margin-top: 50px;
+   }
+   .lefthero button{
+    cursor:pointer;
+   }
+   .content h1{
+    font-size:70px;
+    font-weight:bold;
+    line-height:1;
+   }
+   .lefthero p{
+    color:gray;
+    margin-top:40px;
+    line-height:1.8;
+    size: 12px;
+}
+.lefthero button{
+  margin-top: 25px;
+  padding:5px;
+  width:100px;
+  height:40px;
+  border: 1px solid black;
+}
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    position: absolute;
+    top: 30px;
+    left: 0;
+
+    background: white;
+    width: 150px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    display: none;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="leftside">
+      <h1>snap</h1>
+      <div class="dropdown">
+        <p>Features ▾</p>
+      <div class="dropdown-content">
+        <p>📝 Todo List</p>
+        <p>📅 Calendar</p>
+        <p>⏰ Reminders</p>
+        <p>🗂️ Planning</p>
+      </div>
+      </div>
+      <p>Company</p>
+      <p>Careers</p>
+      <p>About</p>
+    </div>
+    <div class="righside">
+      <button>Login</button>
+      <button class="btn">Register</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="lefthero">
+      <h1>Make</h1>
+      <h1>remote work</h1>
+      <p>Get your team in sync, no matter your location
+      Streamlined processes, create team rituals and
+      watch productivity soar</p>
+      <button> Learn more</button>
+    </div>
+    <div class="righthero">
+      <img src="image-hero-desktop.png" width="420px" height="500px" alt="">
+    </div>
+  </div>
+
+</body>
+
+</html>
